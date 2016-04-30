@@ -6,7 +6,7 @@ dirsearch;git;dirsearch;python;dirsearch is a simple command line tool designed 
 dnsenum;git;dnsenum.tar.gz;NULL;dnsenum is a perl script that enumerates DNS information
 g3m;1;g3m.c;NULL;Another powerfull network stress tool
 hashid;git;hashID;NULL;hashID Identify the different types of hashes used to encrypt data and especially passwords.
-inurlbr;git;SCANNER-INURLBR;php5 php5-curl php5-cli;Advanced search on search engines. Allows from analysis with exploits GET/POST to capture emails and custom validation.
+inurlbr;git;SCANNER-INURLBR;php;Advanced search on search engines. Allows from analysis with exploits GET/POST to capture emails and custom validation.
 linset;git;linset.tar.gz;NULL;WPA2 hack without brute force
 metasploit;1;;NULL;Metasploit is a tool for developing and executing exploit code against a remote target machine.
 nikto;2,15;nikto;NULL;Nikto is a web server assessment tool. It is designed to find various default and insecure files, configurations and programs on any type of web server.
