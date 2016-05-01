@@ -19,4 +19,4 @@ RCEer;git;;NULL;Remote Command Execution scanner written in Python 2.7
 reaver;1,4;;libpcap sqlite;Reaver implements a brute force attack against Wifi Protected Setup (WPS) registrar PINs in order to recover WPA/WPA2 passphrases
 sqlmap;git;sqlmap;NULL;sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
 t50;5,41;;NULL;Very fast and powerfull network stress tool
-wpscan;git;wpscan;libyaml ruby;WPScan is a black box WordPress vulnerability scanner.
+wpscan;git;wpscan;libyaml ruby ruby-bundler;WPScan is a black box WordPress vulnerability scanner.
