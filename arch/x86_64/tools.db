@@ -10,7 +10,7 @@ inurlbr;git;SCANNER-INURLBR;php;Advanced search on search engines. Allows from a
 john;git;JohnTheRipper;NULL;John the Ripper is a fast password cracker. Its primary purpose is to detect weak Unix passwords. Besides several crypt password hash types most commonly found on various Unix flavors.
 joomscan;1;joomscan-latest.zip;perl-www-mechanize perl-switch;Detects file inclusion, sql injection, command execution vulnerabilities of a target Joomla! web site.
 linset;git;linset.tar.gz;NULL;WPA2 hack without brute force
-metasploit;1;;NULL;Metasploit is a tool for developing and executing exploit code against a remote target machine.
+metasploit;1;metasploit-latest-linux-x64-installer.run;NULL;Metasploit is a tool for developing and executing exploit code against a remote target machine.
 nikto;git;nikto;NULL;Nikto is a web server assessment tool. It is designed to find various default and insecure files, configurations and programs on any type of web server.
 nmap;7,12;nmap-7.12.tar.bz2;NULL;Nmap is a free and open source utility for network discovery and security auditing
 patator;git;patator;NULL;Patator is a multi-purpose brute-forcer, with a modular design and a flexible usage.
