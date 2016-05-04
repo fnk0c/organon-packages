@@ -21,3 +21,4 @@ reaver;1,4;;libpcap sqlite;Reaver implements a brute force attack against Wifi P
 sqlmap;git;sqlmap;NULL;sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
 t50;5,41;;NULL;Very fast and powerfull network stress tool
 wpscan;git;wpscan;libyaml ruby ruby-bundler;WPScan is a black box WordPress vulnerability scanner.
+xssya;git;xssya-v-2.0;python2-pip;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation (Working in two Methods). Method number 1 for Confirmation Request and Response. Method number 2 for Confirmation Execute encoded payload and search for the same payload in web HTML code but decoded.
