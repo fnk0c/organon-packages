@@ -4,7 +4,7 @@ beef;git;beef;build-essential openssl libreadline6 libreadline6-dev zlib1g zlib1
 bully;git;bully;libssl-dev libpcap-dev;A wifi-protected-setup (WPS) brute force attack tool.;
 cangibrina;git;cangibrina;python-mechanize python-bs4 python-socksipy;Cangibrina is a multi platform tool which aims to obtain the Dashboard of sites using brute-force over wordlist, google, nmap, and robots.txt;
 cmsmap;git;CMSmap;NULL;CMSmap is a python open source CMS scanner that automates the process of detecting security flaws of the most popular CMSs.;
-dirs3arch;git;dirs3arch;python3;Dirs3arch is a simple command line tool designed to brute force directories and files in websites.;
+dirsearch;git;dirsearch;python3;Dirs3arch is a simple command line tool designed to brute force directories and files in websites.;
 dnsenum;git;dnsenum;NULL;dnsenum is a perl script that enumerates DNS information;
 ettercap;git;ettercap;debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-openssl-dev libgtk2.0-dev  libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev libpcre3-dev libssl-dev libgtk-3-dev;Ettercap is a comprehensive suite for a man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.;
 g3m;1;g3m.c;NULL;Another powerfull network stress tool;
