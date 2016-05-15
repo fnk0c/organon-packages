@@ -1,4 +1,11 @@
 #!/usr/bin/python
+#coding=utf-8
+
+__AUTHOR__	= "Fnkoc"
+
+#This script is part of Organon's project.
+#See LICENSE for copy permission
+#https://github.com/fnk0c/organon
 
 try:
 	raw_input
