@@ -12,6 +12,7 @@ joomscan;1;joomscan-latest.zip;perl-www-mechanize perl-switch;Detects file inclu
 linset;git;linset.tar.gz;NULL;WPA2 hack without brute force
 metasploit;1;metasploit-latest-linux-installer.run;NULL;Metasploit is a tool for developing and executing exploit code against a remote target machine.
 nikto;git;nikto;NULL;Nikto is a web server assessment tool. It is designed to find various default and insecure files, configurations and programs on any type of web server.
+nipe;git;nipe;perl;Script to redirect all the traffic from the machine to the Tor network.
 nmap;7,12;nmap-7.12.tar.bz2;NULL;Nmap is a free and open source utility for network discovery and security auditing
 patator;git;patator;NULL;Patator is a multi-purpose brute-forcer, with a modular design and a flexible usage.
 pompem;git;Pompem;python2 python2-pip;Pompem is an open source tool, which is designed to automate the search for exploits in major databases. Developed in Python, has a system of advanced search, thus facilitating the work of pentesters and ethical hackers. In its current version, performs searches in databases: Exploit-db, 1337day, Packetstorm Security.
@@ -20,6 +21,7 @@ RCEer;git;;NULL;Remote Command Execution scanner written in Python 2.7
 reaver;1,4;;libpcap sqlite;Reaver implements a brute force attack against Wifi Protected Setup (WPS) registrar PINs in order to recover WPA/WPA2 passphrases
 sqlmap;git;sqlmap;NULL;sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
 t50;5,41;;NULL;Very fast and powerfull network stress tool
+vega;1;VegaBuild-linux.gtk.x86.zip;jdk8-openjdk;Vega is a free and open source scanner and testing platform to test the security of web applications. Vega can help you find and validate SQL Injection, Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities.
 wpscan;git;wpscan;libyaml ruby ruby-bundler;WPScan is a black box WordPress vulnerability scanner.
-xssya;git;xssya-v-2.0;python2-pip;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation (Working in two Methods). Method number 1 for Confirmation Request and Response. Method number 2 for Confirmation Execute encoded payload and search for the same payload in web HTML code but decoded.
 xampp;7.05;xampp-linux-7.0.5-0-installer.run;NULL;XAMPP is a completely free, easy to install Apache distribution containing MySQL, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.
+xssya;git;xssya-v-2.0;python2-pip;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation (Working in two Methods). Method number 1 for Confirmation Request and Response. Method number 2 for Confirmation Execute encoded payload and search for the same payload in web HTML code but decoded.
