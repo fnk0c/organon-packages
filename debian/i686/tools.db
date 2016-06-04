@@ -26,7 +26,7 @@ set;git;social-engineer-toolkit;git build-essential python-pexpect python-pefile
 slowloris;0,71;slowloris.pl;libio-socket-ssl-perl libio-socket-inet6-perl perl-doc ;Powerfull DoS tool that aims servers Apache up to 1.x or 2.x
 sqlmap;git;sqlmap;NULL;sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
 sslstrip;git;sslstrip;python-twisted-web;sslstrip is a MITM tool that implements Moxie Marlinspikes SSL stripping attacks.
-t50;5.63;t50-5.6.3.tar.gz;NULL;Very fast and powerfull network stress tool
+t50;5.63;t50-5.6.3.tar.gz;build-essential;Very fast and powerfull network stress tool
 vega;1;VegaBuild-linux.gtk.x86_64.zip;libwebkitgtk-1.0 openjdk-7-dbg;Vega is a free and open source scanner and testing platform to test the security of web applications. Vega can help you find and validate SQL Injection, Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities.
 warcarrier;1;warcarrier-0.3.04.tar.gz;perl-curses-ui perl-json-xs;
 wpscan;git;wpscan;libcurl4-gnutls-dev libruby libxml2 libxml2-dev libxslt1-dev;WPScan is a black box WordPress vulnerability scanner.
