@@ -15,7 +15,7 @@ john;git;JohnTheRipper;libssl-dev libgmp-dev libpcap-dev;John the Ripper is a fa
 joomscan;1;joomscan-latest.zip;libswitch-perl libwww-mechanize-perl;Detects file inclusion, sql injection, command execution vulnerabilities of a target Joomla! web site.
 linset;git;linset;NULL;WPA2 hack without brute force
 metasploit;1;metasploit-latest-linux-x64-installer.run;NULL;Metasploit is a tool for developing and executing exploit code against a remote target machine.
-nikto;2,15;nikto-2.1.5.tar.gz;NULL;Nikto is a web server assessment tool. It is designed to find various default and insecure files, configurations and programs on any type of web server.
+nikto;git;nikto;NULL;Nikto is a web server assessment tool. It is designed to find various default and insecure files, configurations and programs on any type of web server.
 nmap;7,12;nmap-7.12.tar.bz2;NULL;Nmap is a free and open source utility for network discovery and security auditing
 patator;git;patator;NULL;Patator is a multi-purpose brute-forcer, with a modular design and a flexible usage.
 pompem;git;Pompem;python-beautifulsoup python-requests;Pompem is an open source tool, which is designed to automate the search for exploits in major databases.
