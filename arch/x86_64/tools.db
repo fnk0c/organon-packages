@@ -1,4 +1,4 @@
-aircrack-ng;1,2;aircrack-ng-1.2-rc2.tar.gz;wireless_tools ethtool iw net-tools openssl sqlite;Aircrack-ng is an 802.11 WEP and WPA-PSK keys cracking program that can recover keys once enough da ta packets have been captured.;;
+aircrack-ng;1,2;aircrack-ng-1.2-rc4.tar.gz;wireless_tools ethtool iw net-tools openssl sqlite;Aircrack-ng is an 802.11 WEP and WPA-PSK keys cracking program that can recover keys once enough da ta packets have been captured.;;
 bully;git;bully.tar.gz;openssl libpcap;A wifi-protected-setup (WPS) brute force attack tool.;;
 cangibrina;git;cangibrina;python2 python2-pip;Cangibrina is a multi platform tool which aims to obtain the Dashboard of sites using brute-force over wordlist, google, nmap, and robots.txt;;
 cmsmap;git;CMSmap;NULL;CMSmap is a python open source CMS scanner that automates the process of detecting security flaws of the most popular CMSs.;;
