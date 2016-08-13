@@ -80,8 +80,8 @@ def database(pkgname, version, arch):
 	for i in os:
 		for j in arch_path:
 			full_path = "%s/%s/pkgconfig/" % (i, j)
-			system("cp %s %s" %(pkgname, full_path))
-	system("rm %s" % pkgname)
+			system("cp '%s.conf' %s" %(pkgname, full_path))
+	system("rm '%s.conf'" % pkgname)
 
 	"""Update Database in order to add package"""
 	source_name = raw_input("Source name: ")

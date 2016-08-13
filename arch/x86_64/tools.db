@@ -25,3 +25,4 @@ vega;1;VegaBuild-linux.gtk.x86_64.zip;jdk8-openjdk webkitgtk2;Vega is a free and
 wpscan;git;wpscan;libyaml ruby ruby-bundler;WPScan is a black box WordPress vulnerability scanner.;;
 xampp;7.05;xampp-linux-x64-7.0.5-0-installer.run;NULL;XAMPP is a completely free, easy to install Apache distribution containing MySQL, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.;;
 xssya;git;xssya-v-2.0;python2-pip;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation (Working in two Methods). Method number 1 for Confirmation Request and Response. Method number 2 for Confirmation Execute encoded payload and search for the same payload in web HTML code but decoded.;;
+find my hash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
