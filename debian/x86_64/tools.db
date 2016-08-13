@@ -34,4 +34,4 @@ wpscan;git;wpscan;libcurl4-gnutls-dev libruby libxml2 libxml2-dev libxslt1-dev;W
 xampp;7.05;xampp-linux-x64-7.0.5-0-installer.run;NULL;XAMPP is a completely free, easy to install Apache distribution containing MySQL, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.
 xssya;git;XSSYA-V-2.0;python-pip python-colorama;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation
 zaproxy;2,4;ZAP_2.4.0_Linux.tar.gz;openjdk-7-jdk;The OWASP Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.
-find my hash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
+findmyhash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
