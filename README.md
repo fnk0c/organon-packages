@@ -20,6 +20,10 @@ process =
 }
 installer = (none, script or symlink)
 type = only if installer is different of "none" (python, perl...)
+
+source_name = How the package is called after download
+dependencies = Required dependencies
+description = Package description
 ```
 
 ### Database
