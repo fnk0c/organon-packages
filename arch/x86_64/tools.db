@@ -26,3 +26,4 @@ wpscan;git;wpscan;libyaml ruby ruby-bundler;WPScan is a black box WordPress vuln
 xampp;7.05;xampp-linux-x64-7.0.5-0-installer.run;NULL;XAMPP is a completely free, easy to install Apache distribution containing MySQL, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.;;
 xssya;git;xssya-v-2.0;python2-pip;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation (Working in two Methods). Method number 1 for Confirmation Request and Response. Method number 2 for Confirmation Execute encoded payload and search for the same payload in web HTML code but decoded.;;
 findmyhash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
+virgulino;git;virgulino;NULL;Virgulino is a simple experiment with steganography. We developed a program that turns text into blank spaces and the reverse. The idea is that the text is encrypted before being hidden.

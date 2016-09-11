@@ -34,3 +34,4 @@ xampp;7.05;xampp-linux-7.0.5-0-installer.run;NULL;XAMPP is a completely free, ea
 xssya;git;XSSYA-V-2.0;python-pip python-colorama;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation
 zaproxy;2,4;ZAP_2.4.0_Linux.tar.gz;openjdk-7-jdk;The OWASP Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.
 findmyhash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
+virgulino;git;virgulino;NULL;Virgulino is a simple experiment with steganography. We developed a program that turns text into blank spaces and the reverse. The idea is that the text is encrypted before being hidden.
