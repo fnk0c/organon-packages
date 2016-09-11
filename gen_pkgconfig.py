@@ -85,7 +85,16 @@ def database(pkgname, version, arch):
 
 	"""Update Database in order to add package"""
 	source_name = raw_input("Source name: ")
+	os = raw_input("Which OS? (arch | debian | all)\n >> ")
+	if os == "all":
+		os = ["arch", "debian"]
+	elif os = "arch":
+		os = ["arch"]
+	elif os = "debian":
+		os = ["debian"]
 	dependencies = raw_input("Dependencies: ")
+	if dependencies == "":
+		dependencies = "NULL"
 	description = raw_input("Description: ")
 	for i in os:
 		for j in arch_path:
