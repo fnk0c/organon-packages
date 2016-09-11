@@ -88,9 +88,9 @@ def database(pkgname, version, arch):
 	os = raw_input("Which OS? (arch | debian | all)\n >> ")
 	if os == "all":
 		os = ["arch", "debian"]
-	elif os = "arch":
+	elif os == "arch":
 		os = ["arch"]
-	elif os = "debian":
+	elif os == "debian":
 		os = ["debian"]
 	dependencies = raw_input("Dependencies: ")
 	if dependencies == "":
