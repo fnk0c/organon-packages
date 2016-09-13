@@ -7,7 +7,6 @@ cmsmap;git;CMSmap;NULL;CMSmap is a python open source CMS scanner that automates
 dirsearch;git;dirsearch;python3;Dirs3arch is a simple command line tool designed to brute force directories and files in websites.
 dnsenum;git;dnsenum;NULL;dnsenum is a perl script that enumerates DNS information
 ettercap;git;ettercap;debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-openssl-dev libgtk2.0-dev  libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev libpcre3-dev libssl-dev libgtk-3-dev;Ettercap is a comprehensive suite for a man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
-g3m;1;g3m.c;NULL;Another powerfull network stress tool
 hashid;git;hashID;NULL;hashID Identify the different types of hashes used to encrypt data and especially passwords.
 hydra;8,2;thc-hydra;libssl-dev libssh-dev libidn11-dev libpcre3-dev libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev firebird2.1-dev libncp-dev;A very fast network logon cracker which support many different services.
 inurlbr;git;SCANNER-INURLBR;php5 php5-curl php5-cli;Advanced search on search engines. Allows from analysis with exploits GET/POST to capture emails and custom validation.
@@ -19,19 +18,10 @@ nikto;git;nikto;NULL;Nikto is a web server assessment tool. It is designed to fi
 nmap;7,12;nmap-7.12.tar.bz2;NULL;Nmap is a free and open source utility for network discovery and security auditing
 patator;git;patator;NULL;Patator is a multi-purpose brute-forcer, with a modular design and a flexible usage.
 pompem;git;Pompem;python-beautifulsoup python-requests;Pompem is an open source tool, which is designed to automate the search for exploits in major databases.
-proxychains;git;proxychains-ng;NULL;ProxyChains is a UNIX program, that hooks network-related libc functions in DYNAMICALLY LINKED programs via a preloaded DLL (dlsym(), LD_PRELOAD) and redirects the connections through SOCKS4a/5 or HTTP proxies. It supports TCP only (no UDP/ICMP etc).
-RCEer;git;RCEer;NULL;Remote Command Execution scanner written in Python 2.7
-reaver;1,4;reaver-1.4.tar.gz ;libpcap*-dev libsqlite3-dev ;Reaver implements a brute force attack against Wifi Protected Setup (WPS) registrar PINs in order to recover WPA/WPA2 passphrases
-set;git;social-engineer-toolkit;git build-essential python-pexpect python-pefile python-crypto python-openssl;The Social-Engineer Toolkit is an open-source penetration testing framework designed for Social-Engineering
-slowloris;0,71;slowloris.pl;libio-socket-ssl-perl libio-socket-inet6-perl perl-doc ;Powerfull DoS tool that aims servers Apache up to 1.x or 2.x
 sqlmap;git;sqlmap;NULL;sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
-sslstrip;git;sslstrip;python-twisted-web;sslstrip is a MITM tool that implements Moxie Marlinspikes SSL stripping attacks.
 t50;5.63;t50-5.6.3.tar.gz;build-essential;Very fast and powerfull network stress tool
 vega;1;VegaBuild-linux.gtk.x86_64.zip;libwebkitgtk-1.0 openjdk-7-dbg;Vega is a free and open source scanner and testing platform to test the security of web applications. Vega can help you find and validate SQL Injection, Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities.
-warcarrier;1;warcarrier-0.3.04.tar.gz;perl-curses-ui perl-json-xs;
 wpscan;git;wpscan;libcurl4-gnutls-dev libruby libxml2 libxml2-dev libxslt1-dev;WPScan is a black box WordPress vulnerability scanner.
 xampp;7.05;xampp-linux-7.0.5-0-installer.run;NULL;XAMPP is a completely free, easy to install Apache distribution containing MySQL, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.
 xssya;git;XSSYA-V-2.0;python-pip python-colorama;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation
-zaproxy;2,4;ZAP_2.4.0_Linux.tar.gz;openjdk-7-jdk;The OWASP Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.
 findmyhash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
-virgulino;git;virgulino;NULL;Virgulino is a simple experiment with steganography. We developed a program that turns text into blank spaces and the reverse. The idea is that the text is encrypted before being hidden.
