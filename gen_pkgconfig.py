@@ -116,7 +116,7 @@ def database(pkgname, version, arch):
 										dependencies, description])
 
 			except exception:
-				print("eita")
+				print("eita giovana")
 
 
 if __name__ == "__main__":
