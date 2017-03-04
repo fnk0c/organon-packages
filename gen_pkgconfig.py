@@ -28,11 +28,12 @@ def pkgconfig():
 	arch = raw_input("Arch (x86, x86_64, any): ")
 	source = raw_input("Source (https://download.com): ")
 
-	version = raw_input("Version: ")
+	version = raw_input("Version (x.x, git):")
 	if version == "":
 		version = "git"
 
-	print("Process: ")
+	print("Process (Compile process required (./configure, make)):")
+	print("Type \":q\" after done")
 
 	exit = False
 	while exit != True:
@@ -41,29 +42,28 @@ def pkgconfig():
 			process.append(step)
 		else:
 			exit = True
+	print(step)
+	if step == None:
+		process.append("#Nothing")
+		print("Nothing to be done")
 
-	installer = raw_input("Installer: ").lower()
+	installer = raw_input("Installer (none, script):").lower()
 	if installer != "none":
 		language = raw_input("Language: ")
 
-	keepgoing = raw_input(" [!] Confirm? [Y/n]").lower()
-	if keepgoing == "n":
-		print(" [-] Canceled")
-		exit()
-	else:
-		with open("%s.conf" % pkgname, "w") as f:
-			f.write("maintaner = %s\n" % maintaner)
-			f.write("pkgname = %s\n" % pkgname)
-			f.write("version = %s\n" % version)
-			f.write("arch = %s\n" % arch)
-			f.write("source = %s\n" % source)
-			f.write("process = \n{\n")
-			for i in process:
-				f.write("%s\n" % i)
-			f.write("}\n")
-			f.write("installer = %s\n" % installer)
-			if installer != "none":
-				f.write("type = %s" % language)
+	with open("%s.conf" % pkgname, "w") as f:
+		f.write("maintaner = %s\n" % maintaner)
+		f.write("pkgname = %s\n" % pkgname)
+		f.write("version = %s\n" % version)
+		f.write("arch = %s\n" % arch)
+		f.write("source = %s\n" % source)
+		f.write("process = \n{\n")
+		for i in process:
+			f.write("%s\n" % i)
+		f.write("}\n")
+		f.write("installer = %s\n" % installer)
+		if installer != "none":
+			f.write("type = %s" % language)
 
 	return (pkgname, version, arch) #add description
 
@@ -84,7 +84,11 @@ def database(pkgname, version, arch):
 	system("rm '%s.conf'" % pkgname)
 
 	"""Update Database in order to add package"""
-	source_name = raw_input("Source name: ")
+	source_name = raw_input("""
+Source name:
+What's the name of the downloaded package?
+Exemple: nmap-7.12.tar.bz2: 
+>> """)
 	os = raw_input("Which OS? (arch | debian | all)\n >> ")
 	if os == "all":
 		os = ["arch", "debian"]
@@ -92,7 +96,7 @@ def database(pkgname, version, arch):
 		os = ["arch"]
 	elif os == "debian":
 		os = ["debian"]
-	dependencies = raw_input("Dependencies: ")
+	dependencies = raw_input("Dependencies (ntfs-3g perl nettools||Blank if none):")
 	if dependencies == "":
 		dependencies = "NULL"
 	description = raw_input("Description: ")
@@ -118,10 +122,64 @@ def database(pkgname, version, arch):
 			except exception:
 				print("eita")
 
+def remove(pkg):
+	paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
+#			"fedora/x86_64","fedora/i686"]
+
+	print(" Removing PKGCONFIG")
+
+	for path in paths:
+		system("rm -rf %s/pkgconfig/%s.conf" % (path, pkg))
+
+		inpt = open("%s/tools.db" % path, "r")
+		oupt = open("%s/tools.db.edit" % path, "w")
+		writer = csv.writer(oupt)
+		
+		for row in csv.reader(inpt, delimiter = ";"):
+			print(row[0])
+			if row[0] != pkg:
+				writer.writerow(row)
+
+		inpt.close()
+		oupt.close()
+		
+		system("rm -rf %s/tools.db" % path)
+		system("mv %s/tools.db.edit %s/tools.db" % (path, path))
+
+def main():
+	system("clear")
+	print("""
+ Organon Package Utility
+ 
+ [1] - Create PKGCONFIG
+ [2] - Update existent PKGCONFIG
+ [3] - Delete existent PKGCONFIG
+ 
+ [0] - Exit
+""")
+	opt = raw_input(" >> ")
+	
+	if opt == "1":
+		data = pkgconfig()
+		pkgname = data[0]
+		version = data[1]
+		arch = data[2]
+		database(pkgname, version, arch)
+	elif opt == "2":
+		print("Upcoming feature")
+	elif opt == "3":
+		remove(raw_input("Package name: "))
+	elif opt == "0":
+		print("\nGoodbye!")
+		exit()
+	else:
+		print(" Option \"%s\" not recognized" % opt)
 
 if __name__ == "__main__":
-	data = pkgconfig()
-	pkgname = data[0]
-	version = data[1]
-	arch = data[2]
-	database(pkgname, version, arch)
+	try:
+		main()
+	except KeyboardInterrupt:
+		print("\nUser Quit")
+	except Exception as e:
+		print(e)
+		exit()
