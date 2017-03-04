@@ -146,27 +146,29 @@ def remove(pkg):
 		system("rm -rf %s/tools.db" % path)
 		system("mv %s/tools.db.edit %s/tools.db" % (path, path))
 
+#def update():
 def update(pkg, pkg_name, deps, version, url):
+	db_info = []
 	paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
 #			"fedora/x86_64","fedora/i686"]
 
 	for path in paths:
-		inpt = open("%s/tools.db" % path, "r")
-		oupt = open("%s/tools.db.edit" % path, "w")
-		writer = csv.writer(oupt)
-		
-		for row in csv.reader(inpt, delimiter = ";"):
-			if row[0] == pkg:
-				row[1] = version
-				row[2] = pkg_name
-				row[3] = deps
-				writer.writerow(row)
+		with open("%s/tools.db" % path, "r") as csvfile:
+			csvcontent = csv.reader(csvfile, delimiter = ";")
 
-		inpt.close()
-		oupt.close()
+			for row in csvcontent:
+				if row[0] == pkg:
+					row[1] = version
+					row[2] = pkg_name
+					row[3] = deps
+					
+				db_info.append(row)
 		
-		system("rm -rf %s/tools.db" % path)
-		system("mv %s/tools.db.edit %s/tools.db" % (path, path))
+		with open("%s/tools.db" % path, "w") as csvfile:
+			csvcontent = csv.writer(csvfile, delimiter = ";")
+			
+			for info in db_info:
+				csvcontent.writerow(info)
 
 def main():
 	system("clear")
@@ -196,6 +198,7 @@ def main():
 		version = raw_input("Update to version: ")
 		url = raw_input("URL: ")
 		update(pkg, pkg_name, deps, version, url)
+
 	elif opt == "3":
 		remove(raw_input("Package name: "))
 	elif opt == "0":
