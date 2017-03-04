@@ -5,6 +5,7 @@ import csv
 from os import system
 
 __AUTHOR__	= "Fnkoc"
+__DATE__	= "04/03/17"
 
 #This script is part of Organon's project.
 #See LICENSE for copy permission
@@ -42,10 +43,9 @@ def pkgconfig():
 			process.append(step)
 		else:
 			exit = True
-	print(step)
-	if step == None:
+
+	if step[0] == ":":
 		process.append("#Nothing")
-		print("Nothing to be done")
 
 	installer = raw_input("Installer (none, script):").lower()
 	if installer != "none":
@@ -146,6 +146,30 @@ def remove(pkg):
 		system("rm -rf %s/tools.db" % path)
 		system("mv %s/tools.db.edit %s/tools.db" % (path, path))
 
+def update(pkg, pkg_name, deps, version, url):
+	paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
+#			"fedora/x86_64","fedora/i686"]
+
+	for path in paths:
+		print("rm -rf %s/pkgconfig/%s.conf" % (path, pkg))
+
+		inpt = open("%s/tools.db" % path, "r")
+		oupt = open("%s/tools.db.edit" % path, "w")
+		writer = csv.writer(oupt)
+		
+		for row in csv.reader(inpt, delimiter = ";"):
+			if row[0] == pkg:
+				row[1] = version
+				row[2] = pkg_name
+				row[3] = deps
+				writer.writerow(row)
+
+		inpt.close()
+		oupt.close()
+		
+		system("rm -rf %s/tools.db" % path)
+		system("mv %s/tools.db.edit %s/tools.db" % (path, path))
+
 def main():
 	system("clear")
 	print("""
@@ -166,7 +190,14 @@ def main():
 		arch = data[2]
 		database(pkgname, version, arch)
 	elif opt == "2":
-		print("Upcoming feature")
+		print("Upcoming Feature")
+		exit()
+		pkg = raw_input("Package name: ")
+		pkg_name = raw_input("Packet name (nmap.tar.bz2): ")
+		deps = raw_input("Dependencies: ")
+		version = raw_input("Update to version: ")
+		url = raw_input("URL: ")
+		update(pkg, pkg_name, deps, version, url)
 	elif opt == "3":
 		remove(raw_input("Package name: "))
 	elif opt == "0":
