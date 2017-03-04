@@ -186,8 +186,6 @@ def main():
 		arch = data[2]
 		database(pkgname, version, arch)
 	elif opt == "2":
-		print("Upcoming Feature")
-		exit()
 		pkg = raw_input("Package name: ")
 		pkg_name = raw_input("Packet name (nmap.tar.bz2): ")
 		deps = raw_input("Dependencies: ")
