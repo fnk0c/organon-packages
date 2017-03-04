@@ -151,8 +151,6 @@ def update(pkg, pkg_name, deps, version, url):
 #			"fedora/x86_64","fedora/i686"]
 
 	for path in paths:
-		print("rm -rf %s/pkgconfig/%s.conf" % (path, pkg))
-
 		inpt = open("%s/tools.db" % path, "r")
 		oupt = open("%s/tools.db.edit" % path, "w")
 		writer = csv.writer(oupt)

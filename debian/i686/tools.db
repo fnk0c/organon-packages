@@ -1,27 +1,27 @@
-"aircrack-ng,""1,2"",aircrack-ng-1.2-rc4.tar.gz ,build-essential libssl-dev pkg-config libpcre3-dev libnl-3-dev libnl-genl-3-dev,Aircrack-ng is an 802.11 WEP and WPA-PSK keys cracking program that can recover keys once enough da ta packets have been captured."
-"3viltiwnattacker,git,3vilTiwnAttacker,python-qt4 python-scapy php5-cli python-beautifulsoup isc-dhcp-server,""This tool create an rogue Wi-Fi access point , purporting to provide wireless Internet services, but snooping on the traffic."""
-"beef,git,beef,build-essential openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev autoconf libc6-dev libncurses5-dev automake libtool bison subversion,BeEF is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser."
-"bully,git,bully,libssl-dev libpcap-dev,A wifi-protected-setup (WPS) brute force attack tool."
-"cangibrina,git,cangibrina,python python-pip,""Cangibrina is a multi platform tool which aims to obtain the Dashboard of sites using brute-force over wordlist, google, nmap, and robots.txt"""
-"cmsmap,git,CMSmap,NULL,CMSmap is a python open source CMS scanner that automates the process of detecting security flaws of the most popular CMSs."
-"dirsearch,git,dirsearch,python3,Dirs3arch is a simple command line tool designed to brute force directories and files in websites."
-"dnsenum,git,dnsenum,NULL,dnsenum is a perl script that enumerates DNS information"
-"ettercap,git,ettercap,debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-openssl-dev libgtk2.0-dev  libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev libpcre3-dev libssl-dev libgtk-3-dev,""Ettercap is a comprehensive suite for a man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis."""
-"hashid,git,hashID,NULL,hashID Identify the different types of hashes used to encrypt data and especially passwords."
-"hydra,""8,2"",thc-hydra,libssl-dev libssh-dev libidn11-dev libpcre3-dev libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev firebird2.1-dev libncp-dev,A very fast network logon cracker which support many different services."
-"inurlbr,git,SCANNER-INURLBR,php5 php5-curl php5-cli,Advanced search on search engines. Allows from analysis with exploits GET/POST to capture emails and custom validation."
-"john,git,JohnTheRipper,libssl-dev libgmp-dev libpcap-dev,John the Ripper is a fast password cracker. Its primary purpose is to detect weak Unix passwords"
-"joomscan,1,joomscan-latest.zip,libswitch-perl libwww-mechanize-perl,""Detects file inclusion, sql injection, command execution vulnerabilities of a target Joomla! web site."""
-"linset,git,linset,NULL,WPA2 hack without brute force"
-"metasploit,1,metasploit-latest-linux-x64-installer.run,NULL,Metasploit is a tool for developing and executing exploit code against a remote target machine."
-"nikto,git,nikto,NULL,""Nikto is a web server assessment tool. It is designed to find various default and insecure files, configurations and programs on any type of web server."""
-"nmap,""7,12"",nmap-7.12.tar.bz2,NULL,Nmap is a free and open source utility for network discovery and security auditing"
-"patator,git,patator,NULL,""Patator is a multi-purpose brute-forcer, with a modular design and a flexible usage."""
-"pompem,git,Pompem,python-beautifulsoup python-requests,""Pompem is an open source tool, which is designed to automate the search for exploits in major databases."""
-"sqlmap,git,sqlmap,NULL,sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers."
-"t50,5.63,t50-5.6.3.tar.gz,build-essential,Very fast and powerfull network stress tool"
-"vega,1,VegaBuild-linux.gtk.x86_64.zip,libwebkitgtk-1.0 openjdk-7-dbg,""Vega is a free and open source scanner and testing platform to test the security of web applications. Vega can help you find and validate SQL Injection, Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities."""
-"wpscan,git,wpscan,libcurl4-gnutls-dev libruby libxml2 libxml2-dev libxslt1-dev,WPScan is a black box WordPress vulnerability scanner."
-"xampp,7.05,xampp-linux-7.0.5-0-installer.run,NULL,""XAMPP is a completely free, easy to install Apache distribution containing MySQL, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use."""
-"xssya,git,XSSYA-V-2.0,python-pip python-colorama,XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation"
-"findmyhash,git,findmyhash,NULL,findmyhash.py try to crack different types of hashes using free online services."
+aircrack-ng;1,2;aircrack-ng-1.2-rc4.tar.gz ;build-essential libssl-dev pkg-config libpcre3-dev libnl-3-dev libnl-genl-3-dev;Aircrack-ng is an 802.11 WEP and WPA-PSK keys cracking program that can recover keys once enough da ta packets have been captured.
+3viltiwnattacker;git;3vilTiwnAttacker;python-qt4 python-scapy php5-cli python-beautifulsoup isc-dhcp-server;This tool create an rogue Wi-Fi access point , purporting to provide wireless Internet services, but snooping on the traffic.
+beef;git;beef;build-essential openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev autoconf libc6-dev libncurses5-dev automake libtool bison subversion;BeEF is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser.
+bully;git;bully;libssl-dev libpcap-dev;A wifi-protected-setup (WPS) brute force attack tool.
+cangibrina;git;cangibrina;python python-pip;Cangibrina is a multi platform tool which aims to obtain the Dashboard of sites using brute-force over wordlist, google, nmap, and robots.txt
+cmsmap;git;CMSmap;NULL;CMSmap is a python open source CMS scanner that automates the process of detecting security flaws of the most popular CMSs.
+dirsearch;git;dirsearch;python3;Dirs3arch is a simple command line tool designed to brute force directories and files in websites.
+dnsenum;git;dnsenum;NULL;dnsenum is a perl script that enumerates DNS information
+ettercap;git;ettercap;debhelper bison check cmake flex ghostscript libbsd-dev libcurl4-openssl-dev libgtk2.0-dev  libltdl-dev libluajit-5.1-dev libncurses5-dev libnet1-dev libpcap-dev libpcre3-dev libssl-dev libgtk-3-dev;Ettercap is a comprehensive suite for a man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
+hashid;git;hashID;NULL;hashID Identify the different types of hashes used to encrypt data and especially passwords.
+hydra;8,2;thc-hydra;libssl-dev libssh-dev libidn11-dev libpcre3-dev libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev firebird2.1-dev libncp-dev;A very fast network logon cracker which support many different services.
+inurlbr;git;SCANNER-INURLBR;php5 php5-curl php5-cli;Advanced search on search engines. Allows from analysis with exploits GET/POST to capture emails and custom validation.
+john;git;JohnTheRipper;libssl-dev libgmp-dev libpcap-dev;John the Ripper is a fast password cracker. Its primary purpose is to detect weak Unix passwords
+joomscan;1;joomscan-latest.zip;libswitch-perl libwww-mechanize-perl;Detects file inclusion, sql injection, command execution vulnerabilities of a target Joomla! web site.
+linset;git;linset;NULL;WPA2 hack without brute force
+metasploit;1;metasploit-latest-linux-x64-installer.run;NULL;Metasploit is a tool for developing and executing exploit code against a remote target machine.
+nikto;git;nikto;NULL;Nikto is a web server assessment tool. It is designed to find various default and insecure files, configurations and programs on any type of web server.
+nmap;7,12;nmap-7.12.tar.bz2;NULL;Nmap is a free and open source utility for network discovery and security auditing
+patator;git;patator;NULL;Patator is a multi-purpose brute-forcer, with a modular design and a flexible usage.
+pompem;git;Pompem;python-beautifulsoup python-requests;Pompem is an open source tool, which is designed to automate the search for exploits in major databases.
+sqlmap;git;sqlmap;NULL;sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
+t50;5.63;t50-5.6.3.tar.gz;build-essential;Very fast and powerfull network stress tool
+vega;1;VegaBuild-linux.gtk.x86_64.zip;libwebkitgtk-1.0 openjdk-7-dbg;Vega is a free and open source scanner and testing platform to test the security of web applications. Vega can help you find and validate SQL Injection, Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities.
+wpscan;git;wpscan;libcurl4-gnutls-dev libruby libxml2 libxml2-dev libxslt1-dev;WPScan is a black box WordPress vulnerability scanner.
+xampp;7.05;xampp-linux-7.0.5-0-installer.run;NULL;XAMPP is a completely free, easy to install Apache distribution containing MySQL, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.
+xssya;git;XSSYA-V-2.0;python-pip python-colorama;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation
+findmyhash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
