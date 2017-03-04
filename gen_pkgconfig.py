@@ -123,30 +123,26 @@ Exemple: nmap-7.12.tar.bz2:
 				print("eita")
 
 def remove(pkg):
+	pkgs = []
 	paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
 #			"fedora/x86_64","fedora/i686"]
-
-	print(" Removing PKGCONFIG")
 
 	for path in paths:
 		system("rm -rf %s/pkgconfig/%s.conf" % (path, pkg))
 
-		inpt = open("%s/tools.db" % path, "r")
-		oupt = open("%s/tools.db.edit" % path, "w")
-		writer = csv.writer(oupt)
+		with open("%s/tools.db" % path, "r") as csvfile:
+			csvcontent = csv.reader(csvfile, delimiter = ";")
+			
+			for row in csvcontent:
+				if row[0] != pkg:
+					pkgs.append(row)
 		
-		for row in csv.reader(inpt, delimiter = ";"):
-			print(row[0])
-			if row[0] != pkg:
-				writer.writerow(row)
+		with open("%s/tools.db" % path, "w") as csvfile:
+			csvcontent = csv.writer(csvfile, delimiter = ";")
 
-		inpt.close()
-		oupt.close()
-		
-		system("rm -rf %s/tools.db" % path)
-		system("mv %s/tools.db.edit %s/tools.db" % (path, path))
+			for row in pkgs:
+				csvcontent.writerow(row)
 
-#def update():
 def update(pkg, pkg_name, deps, version, url):
 	db_info = []
 	paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
