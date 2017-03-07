@@ -151,7 +151,6 @@ def update(pkg, pkg_name, deps, version, url):
 	paths = ["arch/x86_64"]
 
 	for path in paths:
-		"""
 		with open("%s/tools.db" % path, "r") as csvfile:
 			csvcontent = csv.reader(csvfile, delimiter = ";")
 
@@ -168,7 +167,7 @@ def update(pkg, pkg_name, deps, version, url):
 			
 			for info in db_info:
 				csvcontent.writerow(info)
-		"""
+
 		with open("%s/pkgconfig/%s.conf" % (path, pkg), "r") as pkgconfig:
 			pkgconfig = pkgconfig.readlines()
 
