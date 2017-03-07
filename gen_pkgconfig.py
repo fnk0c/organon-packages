@@ -146,9 +146,8 @@ def remove(pkg):
 def update(pkg, pkg_name, deps, version, url):
 	db_info = []
 
-#	paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
+	paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
 #			"fedora/x86_64","fedora/i686"]
-	paths = ["arch/x86_64"]
 
 	for path in paths:
 		with open("%s/tools.db" % path, "r") as csvfile:
@@ -169,18 +168,16 @@ def update(pkg, pkg_name, deps, version, url):
 				csvcontent.writerow(info)
 
 		with open("%s/pkgconfig/%s.conf" % (path, pkg), "r") as pkgconfig:
-			pkgconfig = pkgconfig.readlines()
+			pkgconfig_info = pkgconfig.readlines()
 
 		with open("%s/pkgconfig/%s.conf" % (path, pkg), "w") as pkgconfig:
-			for info in pkgconfig:
-				info = info.rstrip()
-
+			for info in pkgconfig_info:
 				if "source" in info:
 					info = info.split(" ")
-					info = info[0] + " " + info[1] + " " + url
+					info = info[0] + " " + info[1] + " " + url + "\n"
 				elif "version" in info:
 					info = info.split(" ")
-					info = info[0] + " " + info[1] + " " + version
+					info = info[0] + " " + info[1] + " " + version + "\n"
 				else:
 					pass
 			
