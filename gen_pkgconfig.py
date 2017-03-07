@@ -120,7 +120,7 @@ Exemple: nmap-7.12.tar.bz2:
 										dependencies, description])
 
 			except exception:
-				print("eita")
+				print("eita giovana")
 
 def remove(pkg):
 	pkgs = []
