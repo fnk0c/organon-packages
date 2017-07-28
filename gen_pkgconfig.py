@@ -199,7 +199,7 @@ def list():
 	distros = raw_input(" >> ")
 
 	if distros == 0:
-		main()
+		exit()
 
 	else:
 		#Retrieve infos
