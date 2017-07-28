@@ -234,7 +234,7 @@ def list():
 		#Create file
 
 		with open("packages.csv", "w") as new_csv:
-			csv_s = csv.writer(new_csv, delimiter = ";")
+			csv_s = csv.writer(new_csv, delimiter = ",")
 			csv_s.writerow(["System", "Platform", "packages available"])
 
 			if distros == "2" or distros == "1": 
