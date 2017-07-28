@@ -182,6 +182,75 @@ def update(pkg, pkg_name, deps, version, url):
 					pass
 			
 				pkgconfig.write(info)
+def list():
+	"""List All packages available"""
+
+	import csv
+
+	print("""
+ Fetch infos for:
+
+ [1] - All Distributions
+ [2] - Arch 
+ [3] - Debian
+
+ [0] - Exit
+	""")
+	distros = raw_input(" >> ")
+
+	if distros == 0:
+		main()
+
+	else:
+		#Retrieve infos
+		if distros == "2" or distros == "1": 
+			arch_i686 = []
+			arch_x86_64 = []
+		
+			with open("./arch/i686/tools.db") as csvfile:
+				csv_data = csv.reader(csvfile, delimiter = ";")
+				for i in  csv_data:
+					arch_i686.append(i[0])
+
+			with open("./arch/x86_64/tools.db") as csvfile:
+				csv_data = csv.reader(csvfile, delimiter = ";")
+				for i in  csv_data:
+					arch_x86_64.append(i[0])
+
+		if distros == "3" or distros == "1":
+			debian_i686 = []
+			debian_x86_64 = []
+
+			with open("./debian/i686/tools.db") as csvfile:
+				csv_data = csv.reader(csvfile, delimiter = ";")
+				for i in  csv_data:
+					debian_i686.append(i[0])
+
+			with open("./debian/x86_64/tools.db") as csvfile:
+				csv_data = csv.reader(csvfile, delimiter = ";")
+				for i in  csv_data:
+					debian_x86_64.append(i[0])
+
+		#Create file
+
+		with open("packages.csv", "w") as new_csv:
+			csv_s = csv.writer(new_csv, delimiter = ";")
+			csv_s.writerow(["System", "Platform", "packages available"])
+
+			if distros == "2" or distros == "1": 
+				for i in arch_i686:
+					csv_s.writerow(["Arch Linux","x86", i])
+				for i in arch_x86_64:
+					csv_s.writerow(["Arch Linux","x86_64", i])
+
+			if distros == "3" or distros == "1":
+				for i in debian_i686:
+					csv_s.writerow(["Debian","x86", i])
+				for i in debian_x86_64:
+					csv_s.writerow(["Debian","x86_64", i])
+
+		print(" [+] packages.csv generated. Open with Excel, WPS Office or \
+Libre Office")
 
 def main():
 	system("clear")
@@ -191,7 +260,8 @@ def main():
  [1] - Create PKGCONFIG
  [2] - Update existent PKGCONFIG
  [3] - Delete existent PKGCONFIG
- 
+ [4] - Fetch info about which packages are available
+
  [0] - Exit
 """)
 	opt = raw_input(" >> ")
@@ -212,6 +282,10 @@ def main():
 
 	elif opt == "3":
 		remove(raw_input("Package name: "))
+
+	elif opt == "4":
+		list()
+
 	elif opt == "0":
 		print("\nGoodbye!")
 		exit()
