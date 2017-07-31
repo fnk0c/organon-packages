@@ -210,12 +210,14 @@ def list():
 			with open("./arch/i686/tools.db") as csvfile:
 				csv_data = csv.reader(csvfile, delimiter = ";")
 				for i in  csv_data:
-					arch_i686.append(i[0])
+					i = "%s:%s" % (i[0], i[1])
+					arch_i686.append(i)
 
 			with open("./arch/x86_64/tools.db") as csvfile:
 				csv_data = csv.reader(csvfile, delimiter = ";")
 				for i in  csv_data:
-					arch_x86_64.append(i[0])
+					i = "%s:%s" % (i[0], i[1])
+					arch_x86_64.append(i)
 
 		if distros == "3" or distros == "1":
 			debian_i686 = []
@@ -224,30 +226,36 @@ def list():
 			with open("./debian/i686/tools.db") as csvfile:
 				csv_data = csv.reader(csvfile, delimiter = ";")
 				for i in  csv_data:
-					debian_i686.append(i[0])
+					i = "%s:%s" % (i[0], i[1])
+					debian_i686.append(i)
 
 			with open("./debian/x86_64/tools.db") as csvfile:
 				csv_data = csv.reader(csvfile, delimiter = ";")
 				for i in  csv_data:
-					debian_x86_64.append(i[0])
+					i = "%s:%s" % (i[0], i[1])
+					debian_x86_64.append(i)
 
 		#Create file
 
 		with open("packages.csv", "w") as new_csv:
 			csv_s = csv.writer(new_csv, delimiter = ",")
-			csv_s.writerow(["System", "Platform", "packages available"])
+			csv_s.writerow(["System", "Platform", "packages available", "version"])
 
 			if distros == "2" or distros == "1": 
 				for i in arch_i686:
-					csv_s.writerow(["Arch Linux","x86", i])
+					i = i.split(":")
+					csv_s.writerow(["Arch Linux","x86", i[0], i[1]])
 				for i in arch_x86_64:
-					csv_s.writerow(["Arch Linux","x86_64", i])
+					i = i.split(":")
+					csv_s.writerow(["Arch Linux","x86_64", i[0], i[1]])
 
 			if distros == "3" or distros == "1":
 				for i in debian_i686:
-					csv_s.writerow(["Debian","x86", i])
+					i = i.split(":")
+					csv_s.writerow(["Debian","x86", i[0], i[1]])
 				for i in debian_x86_64:
-					csv_s.writerow(["Debian","x86_64", i])
+					i = i.split(":")
+					csv_s.writerow(["Debian","x86_64", i[0], i[1]])
 
 		print(" [+] packages.csv generated. Open with Excel, WPS Office or \
 Libre Office")

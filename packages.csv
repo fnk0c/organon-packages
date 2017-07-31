@@ -1,107 +1,107 @@
-System,Platform,packages available
-Arch Linux,x86,aircrack-ng
-Arch Linux,x86,bully
-Arch Linux,x86,cangibrina
-Arch Linux,x86,cmsmap
-Arch Linux,x86,dirsearch
-Arch Linux,x86,dnsenum
-Arch Linux,x86,hashid
-Arch Linux,x86,inurlbr
-Arch Linux,x86,john
-Arch Linux,x86,joomscan
-Arch Linux,x86,linset
-Arch Linux,x86,metasploit
-Arch Linux,x86,nikto
-Arch Linux,x86,nipe
-Arch Linux,x86,nmap
-Arch Linux,x86,patator
-Arch Linux,x86,pompem
-Arch Linux,x86,sqlmap
-Arch Linux,x86,t50
-Arch Linux,x86,vega
-Arch Linux,x86,wpscan
-Arch Linux,x86,xampp
-Arch Linux,x86,xssya
-Arch Linux,x86,findmyhash
-Arch Linux,x86,routerhunter
-Arch Linux,x86_64,aircrack-ng
-Arch Linux,x86_64,bully
-Arch Linux,x86_64,cangibrina
-Arch Linux,x86_64,cmsmap
-Arch Linux,x86_64,dirsearch
-Arch Linux,x86_64,dnsenum
-Arch Linux,x86_64,hashid
-Arch Linux,x86_64,inurlbr
-Arch Linux,x86_64,john
-Arch Linux,x86_64,joomscan
-Arch Linux,x86_64,linset
-Arch Linux,x86_64,metasploit
-Arch Linux,x86_64,nikto
-Arch Linux,x86_64,nipe
-Arch Linux,x86_64,nmap
-Arch Linux,x86_64,patator
-Arch Linux,x86_64,pompem
-Arch Linux,x86_64,sqlmap
-Arch Linux,x86_64,t50
-Arch Linux,x86_64,vega
-Arch Linux,x86_64,wpscan
-Arch Linux,x86_64,xampp
-Arch Linux,x86_64,xssya
-Arch Linux,x86_64,findmyhash
-Arch Linux,x86_64,routerhunter
-Debian,x86,aircrack-ng
-Debian,x86,3viltiwnattacker
-Debian,x86,beef
-Debian,x86,bully
-Debian,x86,cangibrina
-Debian,x86,cmsmap
-Debian,x86,dirsearch
-Debian,x86,dnsenum
-Debian,x86,ettercap
-Debian,x86,hashid
-Debian,x86,hydra
-Debian,x86,inurlbr
-Debian,x86,john
-Debian,x86,joomscan
-Debian,x86,linset
-Debian,x86,metasploit
-Debian,x86,nikto
-Debian,x86,nmap
-Debian,x86,patator
-Debian,x86,pompem
-Debian,x86,sqlmap
-Debian,x86,t50
-Debian,x86,vega
-Debian,x86,wpscan
-Debian,x86,xampp
-Debian,x86,xssya
-Debian,x86,findmyhash
-Debian,x86,routerhunter
-Debian,x86_64,aircrack-ng
-Debian,x86_64,3viltiwnattacker
-Debian,x86_64,beef
-Debian,x86_64,bully
-Debian,x86_64,cangibrina
-Debian,x86_64,cmsmap
-Debian,x86_64,dirs3arch
-Debian,x86_64,dnsenum
-Debian,x86_64,ettercap
-Debian,x86_64,hashid
-Debian,x86_64,hydra
-Debian,x86_64,inurlbr
-Debian,x86_64,john
-Debian,x86_64,joomscan
-Debian,x86_64,linset
-Debian,x86_64,metasploit
-Debian,x86_64,nikto
-Debian,x86_64,nmap
-Debian,x86_64,patator
-Debian,x86_64,pompem
-Debian,x86_64,sqlmap
-Debian,x86_64,t50
-Debian,x86_64,vega
-Debian,x86_64,wpscan
-Debian,x86_64,xampp
-Debian,x86_64,xssya
-Debian,x86_64,findmyhash
-Debian,x86_64,routerhunter
+System,Platform,packages available,version
+Arch Linux,x86,aircrack-ng,"1,2"
+Arch Linux,x86,bully,git
+Arch Linux,x86,cangibrina,git
+Arch Linux,x86,cmsmap,git
+Arch Linux,x86,dirsearch,git
+Arch Linux,x86,dnsenum,git
+Arch Linux,x86,hashid,git
+Arch Linux,x86,inurlbr,git
+Arch Linux,x86,john,git
+Arch Linux,x86,joomscan,1
+Arch Linux,x86,linset,git
+Arch Linux,x86,metasploit,1
+Arch Linux,x86,nikto,git
+Arch Linux,x86,nipe,git
+Arch Linux,x86,nmap,"7,12"
+Arch Linux,x86,patator,git
+Arch Linux,x86,pompem,git
+Arch Linux,x86,sqlmap,git
+Arch Linux,x86,t50,"5,41"
+Arch Linux,x86,vega,1
+Arch Linux,x86,wpscan,git
+Arch Linux,x86,xampp,7.05
+Arch Linux,x86,xssya,git
+Arch Linux,x86,findmyhash,git
+Arch Linux,x86,routerhunter,git
+Arch Linux,x86_64,aircrack-ng,"1,2"
+Arch Linux,x86_64,bully,git
+Arch Linux,x86_64,cangibrina,git
+Arch Linux,x86_64,cmsmap,git
+Arch Linux,x86_64,dirsearch,git
+Arch Linux,x86_64,dnsenum,git
+Arch Linux,x86_64,hashid,git
+Arch Linux,x86_64,inurlbr,git
+Arch Linux,x86_64,john,git
+Arch Linux,x86_64,joomscan,1
+Arch Linux,x86_64,linset,git
+Arch Linux,x86_64,metasploit,1
+Arch Linux,x86_64,nikto,git
+Arch Linux,x86_64,nipe,git
+Arch Linux,x86_64,nmap,"7,12"
+Arch Linux,x86_64,patator,git
+Arch Linux,x86_64,pompem,git
+Arch Linux,x86_64,sqlmap,git
+Arch Linux,x86_64,t50,"5,41"
+Arch Linux,x86_64,vega,1
+Arch Linux,x86_64,wpscan,git
+Arch Linux,x86_64,xampp,7.05
+Arch Linux,x86_64,xssya,git
+Arch Linux,x86_64,findmyhash,git
+Arch Linux,x86_64,routerhunter,git
+Debian,x86,aircrack-ng,"1,2"
+Debian,x86,3viltiwnattacker,git
+Debian,x86,beef,git
+Debian,x86,bully,git
+Debian,x86,cangibrina,git
+Debian,x86,cmsmap,git
+Debian,x86,dirsearch,git
+Debian,x86,dnsenum,git
+Debian,x86,ettercap,git
+Debian,x86,hashid,git
+Debian,x86,hydra,"8,2"
+Debian,x86,inurlbr,git
+Debian,x86,john,git
+Debian,x86,joomscan,1
+Debian,x86,linset,git
+Debian,x86,metasploit,1
+Debian,x86,nikto,git
+Debian,x86,nmap,"7,12"
+Debian,x86,patator,git
+Debian,x86,pompem,git
+Debian,x86,sqlmap,git
+Debian,x86,t50,5.63
+Debian,x86,vega,1
+Debian,x86,wpscan,git
+Debian,x86,xampp,7.05
+Debian,x86,xssya,git
+Debian,x86,findmyhash,git
+Debian,x86,routerhunter,git
+Debian,x86_64,aircrack-ng,"1,2"
+Debian,x86_64,3viltiwnattacker,git
+Debian,x86_64,beef,git
+Debian,x86_64,bully,git
+Debian,x86_64,cangibrina,git
+Debian,x86_64,cmsmap,git
+Debian,x86_64,dirs3arch,git
+Debian,x86_64,dnsenum,git
+Debian,x86_64,ettercap,git
+Debian,x86_64,hashid,git
+Debian,x86_64,hydra,"8,2"
+Debian,x86_64,inurlbr,git
+Debian,x86_64,john,git
+Debian,x86_64,joomscan,1
+Debian,x86_64,linset,git
+Debian,x86_64,metasploit,1
+Debian,x86_64,nikto,"2,15"
+Debian,x86_64,nmap,"6,47"
+Debian,x86_64,patator,git
+Debian,x86_64,pompem,git
+Debian,x86_64,sqlmap,git
+Debian,x86_64,t50,5.63
+Debian,x86_64,vega,1
+Debian,x86_64,wpscan,git
+Debian,x86_64,xampp,7.05
+Debian,x86_64,xssya,git
+Debian,x86_64,findmyhash,git
+Debian,x86_64,routerhunter,git
