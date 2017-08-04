@@ -5,7 +5,7 @@ import csv
 from os import system
 
 __AUTHOR__	= "Fnkoc"
-__DATE__	= "04/03/17"
+__DATE__	= "04/08/17"
 
 #This script is part of Organon's project.
 #See LICENSE for copy permission
@@ -143,11 +143,30 @@ def remove(pkg):
 			for row in pkgs:
 				csvcontent.writerow(row)
 
-def update(pkg, pkg_name, deps, version, url):
+def update(pkg, pkg_name, deps, version, url, distros):
+	if distros == "0":
+		main()
+
 	db_info = []
 
-	paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
+	if distros == "1":
+		paths = ["arch/x86_64","arch/i686","debian/x86_64","debian/i686"] #,\
 #			"fedora/x86_64","fedora/i686"]
+
+	elif distros == "2":
+		paths = ["arch/x86_64","arch/i686"]
+
+	elif distros == "3":
+		paths = ["debian/x86_64","debian/i686"]
+
+	elif distros == "4":
+		paths = ["fedora/x86_64","fedora/i686"]
+
+	else:
+		print("[!] Invalid option")
+		main()
+
+	db_info = []
 
 	for path in paths:
 		with open("%s/tools.db" % path, "r") as csvfile:
@@ -281,12 +300,23 @@ def main():
 		arch = data[2]
 		database(pkgname, version, arch)
 	elif opt == "2":
+		print("""
+ Fetch infos for:
+
+ [1] - All Distributions
+ [2] - Arch 
+ [3] - Debian
+
+ [0] - Back
+	""")
+		op = raw_input(" >> ")
+
 		pkg = raw_input("Package name: ")
 		pkg_name = raw_input("Packet name (nmap.tar.bz2): ")
 		deps = raw_input("Dependencies: ")
 		version = raw_input("Update to version: ")
 		url = raw_input("URL: ")
-		update(pkg, pkg_name, deps, version, url)
+		update(pkg, pkg_name, deps, version, url, op)
 
 	elif opt == "3":
 		remove(raw_input("Package name: "))
