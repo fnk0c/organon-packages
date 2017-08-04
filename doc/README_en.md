@@ -50,6 +50,10 @@ description = Package description
 #### Update PKGCONFIG
 Select option 2
 
+Choose to which distribution the update will be made  
+
+![submenu](http://i.imgur.com/viuDjKa.png)
+
 ```
 Package Name = Name of the package that will be updated
 Packet Name = It's like "source_name"
