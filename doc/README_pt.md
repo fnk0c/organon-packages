@@ -50,6 +50,10 @@ description = Descrição do pacote
 #### Atualizando PKGCONFIG
 Selecione opção 2
 
+Escolha para qual distribuição será feita a atualização  
+
+![submenu](http://i.imgur.com/viuDjKa.png)
+
 ```
 Package Name = Nome do pacote que será atualizado
 Packet Name = igual ao "source_name"
