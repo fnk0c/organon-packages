@@ -3,7 +3,7 @@ bully;git;bully.tar.gz;openssl libpcap;A wifi-protected-setup (WPS) brute force 
 cangibrina;git;cangibrina;python python-pip;Cangibrina is a multi platform tool which aims to obtain the Dashboard of sites using brute-force over wordlist, google, nmap, and robots.txt;;
 cmsmap;git;CMSmap;NULL;CMSmap is a python open source CMS scanner that automates the process of detecting security flaws of the most popular CMSs.;;
 dirsearch;git;dirsearch;python;dirsearch is a simple command line tool designed to brute force directories and files in websites.;;
-dnsenum;git;dnsenum.tar.gz;NULL;dnsenum is a perl script that enumerates DNS information;;
+dnsenum;git;dnsenum;NULL;dnsenum is a perl script that enumerates DNS information;;
 hashid;git;hashID;NULL;hashID Identify the different types of hashes used to encrypt data and especially passwords.;;
 inurlbr;git;SCANNER-INURLBR;php;Advanced search on search engines. Allows from analysis with exploits GET/POST to capture emails and custom validation.;;
 john;git;JohnTheRipper;NULL;John the Ripper is a fast password cracker. Its primary purpose is to detect weak Unix passwords. Besides several crypt password hash types most commonly found on various Unix flavors.;;
