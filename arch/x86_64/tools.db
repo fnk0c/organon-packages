@@ -23,3 +23,4 @@ xampp;7.05;xampp-linux-x64-7.0.5-0-installer.run;NULL;XAMPP is a completely free
 xssya;git;xssya-v-2.0;python2-pip;XSSYA is a Cross Site Scripting Scanner & Vulnerability Confirmation (Working in two Methods). Method number 1 for Confirmation Request and Response. Method number 2 for Confirmation Execute encoded payload and search for the same payload in web HTML code but decoded.;;
 findmyhash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
 routerhunter;git;Routerhunter-2.0;NULL;Tool used to find vulnerable routers and devices on the Internet and perform tests
+maltego;4.0.11;MaltegoCE.v4.0.11.9358.zip;jdk8-openjdk;Maltego is an interactive data mining tool that renders directed graphs for link analysis. The tool is used in online investigations for finding relationships between pieces of information from various sources located on the Internet.
