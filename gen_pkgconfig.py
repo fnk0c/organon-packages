@@ -5,7 +5,7 @@ import csv
 from os import system
 
 __AUTHOR__	= "Fnkoc"
-__DATE__	= "04/08/17"
+__DATE__	= "20/09/17"
 
 #This script is part of Organon's project.
 #See LICENSE for copy permission
@@ -67,8 +67,14 @@ def pkgconfig():
 
 	return (pkgname, version, arch) #add description
 
-def database(pkgname, version, arch):
-	os = ["arch", "debian"]
+def database(pkgname, version, arch, distro):
+	if distro == "all":
+		os = ["arch", "debian"]
+	elif distro == "arch":
+		os = ["arch"]
+	elif distro == "debian":
+		os = ["debian"]
+
 	if arch == "any":
 		arch_path = ["x86_64", "i686"]
 	elif arch == "x86":
@@ -87,7 +93,7 @@ def database(pkgname, version, arch):
 	source_name = raw_input("""
 Source name:
 What's the name of the downloaded package?
-Exemple: nmap-7.12.tar.bz2: 
+Exemple: nmap-7.12.tar.bz2:
 >> """)
 	os = raw_input("Which OS? (arch | debian | all)\n >> ")
 	if os == "all":
@@ -103,7 +109,7 @@ Exemple: nmap-7.12.tar.bz2:
 	for i in os:
 		for j in arch_path:
 			full_path = "%s/%s/tools.db" % (i, j)
-			
+
 			pkgs = []
 			with open(full_path, "r") as csvfile:
 				csvcontent = csv.reader(csvfile, delimiter=";")
@@ -132,11 +138,11 @@ def remove(pkg):
 
 		with open("%s/tools.db" % path, "r") as csvfile:
 			csvcontent = csv.reader(csvfile, delimiter = ";")
-			
+
 			for row in csvcontent:
 				if row[0] != pkg:
 					pkgs.append(row)
-		
+
 		with open("%s/tools.db" % path, "w") as csvfile:
 			csvcontent = csv.writer(csvfile, delimiter = ";")
 
@@ -177,12 +183,12 @@ def update(pkg, pkg_name, deps, version, url, distros):
 					row[1] = version
 					row[2] = pkg_name
 					row[3] = deps
-					
+
 				db_info.append(row)
-		
+
 		with open("%s/tools.db" % path, "w") as csvfile:
 			csvcontent = csv.writer(csvfile, delimiter = ";")
-			
+
 			for info in db_info:
 				csvcontent.writerow(info)
 
@@ -199,7 +205,7 @@ def update(pkg, pkg_name, deps, version, url, distros):
 					info = info[0] + " " + info[1] + " " + version + "\n"
 				else:
 					pass
-			
+
 				pkgconfig.write(info)
 def list():
 	"""List All packages available"""
@@ -210,7 +216,7 @@ def list():
  Fetch infos for:
 
  [1] - All Distributions
- [2] - Arch 
+ [2] - Arch
  [3] - Debian
 
  [0] - Exit
@@ -222,10 +228,10 @@ def list():
 
 	else:
 		#Retrieve infos
-		if distros == "2" or distros == "1": 
+		if distros == "2" or distros == "1":
 			arch_i686 = []
 			arch_x86_64 = []
-		
+
 			with open("./arch/i686/tools.db") as csvfile:
 				csv_data = csv.reader(csvfile, delimiter = ";")
 				for i in  csv_data:
@@ -260,7 +266,7 @@ def list():
 			csv_s = csv.writer(new_csv, delimiter = ",")
 			csv_s.writerow(["System", "Platform", "packages available", "version"])
 
-			if distros == "2" or distros == "1": 
+			if distros == "2" or distros == "1":
 				for i in arch_i686:
 					i = i.split(":")
 					csv_s.writerow(["Arch Linux","x86", i[0], i[1]])
@@ -283,7 +289,7 @@ def main():
 	system("clear")
 	print("""
  Organon Package Utility
- 
+
  [1] - Create PKGCONFIG
  [2] - Update existent PKGCONFIG
  [3] - Delete existent PKGCONFIG
@@ -292,19 +298,40 @@ def main():
  [0] - Exit
 """)
 	opt = raw_input(" >> ")
-	
+
 	if opt == "1":
+		print("""
+ Pkgconfig for:
+
+ [1] - All Distributions
+ [2] - Arch
+ [3] - Debian
+
+ [0] - Back
+	""")
+
+		op = raw_input(" >> ")
+
+		if op == "1":
+			distro = "all"
+		elif op == "2":
+			distro = "arch"
+		elif op == "3":
+			distro = "debian"
+		elif op == "0":
+			main()
 		data = pkgconfig()
 		pkgname = data[0]
 		version = data[1]
 		arch = data[2]
-		database(pkgname, version, arch)
+		database(pkgname, version, arch, distro)
+
 	elif opt == "2":
 		print("""
  Fetch infos for:
 
  [1] - All Distributions
- [2] - Arch 
+ [2] - Arch
  [3] - Debian
 
  [0] - Back
