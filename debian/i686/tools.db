@@ -904,3 +904,5 @@ maltego;4.0.11;MaltegoCE.v4.0.11.9358.zip;default-jdk;Maltego is an interactive 
 yasuo;git;yasuo;ruby ruby-dev ruby-net-http-persistent ruby-mechanize ruby-sqlite3 ruby-text-table;Yasuo is a ruby script that scansfor vulnerable 3rd-party web applications
 DIRB;2.22;dirb222.tar.gz;NULL;DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.
 DotDotPwn;git;dotdotpwn;NULL;It's a very flexible intelligent fuzzer to discover traversal directory vulnerabilities in software such as HTTP/FTP/TFTP servers, Web platforms such as CMSs, ERPs, Blogs, etc.
+Inguma;0.1.1;inguma-0.1.1.tar.gz;NULL;Inguma is a free penetration testing and vulnerability discovery toolkit entirely written in python. Framework includes modules to discover hosts, gather information about, fuzz targets, brute force usernames and passwords, exploits, etc.
+yasuo;git;yasuo;NULL;A ruby script that scans for vulnerable & exploitable 3rd-party web applications on a network
