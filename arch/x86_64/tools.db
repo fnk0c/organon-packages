@@ -24,3 +24,7 @@ xssya;git;xssya-v-2.0;python2-pip;XSSYA is a Cross Site Scripting Scanner & Vuln
 findmyhash;git;findmyhash;NULL;findmyhash.py try to crack different types of hashes using free online services.
 routerhunter;git;Routerhunter-2.0;NULL;Tool used to find vulnerable routers and devices on the Internet and perform tests
 maltego;4.0.11;MaltegoCE.v4.0.11.9358.zip;jdk8-openjdk;Maltego is an interactive data mining tool that renders directed graphs for link analysis. The tool is used in online investigations for finding relationships between pieces of information from various sources located on the Internet.
+yasuo;git;yasuo;NULL;A ruby script that scans for vulnerable & exploitable 3rd-party web applications on a network
+dirb;2.22;dirb222.tar.gz;NULL;DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.
+dotdotpwn;git;dotdotpwn;NULL;It's a very flexible intelligent fuzzer to discover traversal directory vulnerabilities in software such as HTTP/FTP/TFTP servers, Web platforms such as CMSs, ERPs, Blogs, etc.
+inguma;0.1.1;inguma-0.1.1.tar.gz;NULL;Inguma is a free penetration testing and vulnerability discovery toolkit entirely written in python. Framework includes modules to discover hosts, gather information about, fuzz targets, brute force usernames and passwords, exploits, etc.
